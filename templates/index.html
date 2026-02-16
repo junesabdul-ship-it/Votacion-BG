@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Games Voting Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .games {
+            list-style-type: none;
+            padding: 0;
+        }
+        .game {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Vote for Your Favorite Board Game</h1>
+    <ul class="games">
+        <li class="game">
+            <h2>Settlers of Catan</h2>
+            <button onclick="vote('Settlers of Catan')">Vote</button>
+        </li>
+        <li class="game">
+            <h2>Ticket to Ride</h2>
+            <button onclick="vote('Ticket to Ride')">Vote</button>
+        </li>
+        <li class="game">
+            <h2>Carcassonne</h2>
+            <button onclick="vote('Carcassonne')">Vote</button>
+        </li>
+    </ul>
+    <script>
+        function vote(game) {
+            alert('Thank you for voting for ' + game + '!');
+            // Here, you could add code to send the vote to a server
+        }
+    </script>
+</body>
+</html>
